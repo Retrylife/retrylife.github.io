@@ -1,30 +1,54 @@
-<!-- Wrapper -->
-<div id="wrapper">
+<section class="hero is-primary is-medium is-fullheight-with-navbar" >
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+      <!-- <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item is-active">
+                Home
+              </a>
+              <a class="navbar-item" href="/posts">
+                Posts
+              </a>              
+            </div>
+          </div>
+        </div>
+      </nav> -->
+    </div>
+  
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">
+          {{site.name}}
+        </h1>
+        <h2 class="subtitle">
+          {{site.about}}
+        </h2>
+      </div>
+    </div>
+  
+    <!-- Hero footer: will stick at the bottom -->
+    <div class="hero-foot">
+        <nav class="tabs">
+            <div class="container">
+                <ul>
+                    <li>
 
-    <!-- Header -->
-    <header id="header" {% if page.layout=="landing" %} class="alt style2" {% endif %}{% if page.layout=="home" %} class="alt" {% endif %}>
-        <a href="{{ " " | absolute_url }}/" class="logo"><strong>{{ site.title }}</strong> <span>{{ site.subtitle }}</span></a>
-        <nav>
-            <!-- <a href="#menu">Menu</a> -->
+                    </li>
+                </ul>
+            </div>
         </nav>
-    </header>
-
-    <!-- Menu -->
-    <!-- <nav id="menu">
-	<ul class="links">
-        {% for page in site.pages %}
-		    {% if page.layout == "home" %}
-		        <li><a href="{{ "" | absolute_url }}/">{{ page.title }}</a></li>
-	    	{% endif %}
-		{% endfor %}
-		{% for page in site.pages %}
-		    {% if page.layout != "home" and page.nav-menu == true %}
-		        <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
-		    {% endif %}
-		{% endfor %}
-	</ul>
-	<ul class="actions vertical">
-		<li><a href="#" class="button special fit">Get Started</a></li>
-		<li><a href="#" class="button fit">Log In</a></li>
-	</ul>
-</nav> -->
+    </div>
+  </section>

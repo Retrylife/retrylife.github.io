@@ -1,50 +1,36 @@
-# site settings
-title: Evan Pratten
-subtitle: retrylife
-email: ewpratten@gmail.com
-description: Computer wizard, student, <a href="https://github.com/frc5024">@frc5024</a> programming team lead, and radio enthusiast.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# About me
+name: Evan Pratten
+about: >-
+  Computer wizard, student, <a href="https://frc5024.github.io">@frc5024</a> programming team lead, and radio enthusiast.
+
+
+# Social
+twitter_username: ewpratten
+github_username:  ewpratten
+devrant_username: ewpratten
+twitch_username: ewpratten
+
+## Build settings ##
+
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://retrylife.ca
-author:
-street_address: 
-city:
-state:
-zip_code:
-country: 
-phone:
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-# Google analytics
-analytic_track: UA-74118570-2
-
-# homepage tiles
-tiles-source: posts # accepts "posts" or "pages"
-tiles-count: 10
-
-# permalink: /:title
-
-# social settings
-500px_url:
-facebook_url:
-github_url: https://github.com/ewpratten
-gitlab_url: https://gitlab.com/u/ewpratten
-googleplus_url: 
-instagram_url: 
-linkedin_url: 
-pinterest_url:
-slack_url:
-twitter_url: https://twitter.com/ewpratten
-
-# build settings
 markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-
-highlighter: rouge
-
-sass:
-  style: compressed
-
+theme: minima
 plugins:
   - jekyll-feed
-  - jemoji
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

@@ -1,530 +1,366 @@
 <!DOCTYPE html>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-
-<head>
+<html lang="en">
+    <head>
     <title>Evan Pratten</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="/assets/css/main.css" />
-    <!-- <link rel="stylesheet" href="/assets/css/custom.css" /> -->
-    <!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
-    <!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <!-- Syntax highlight -->
-    <link rel="stylesheet" href="/assets/css/vs.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+
+    <link rel="stylesheet" href="/assets/css/custom.css">
 </head>
 
-<body>
-
-    <!-- Wrapper -->
-<div id="wrapper">
-
-    <!-- Header -->
-    <header id="header"  class="alt" >
-        <a href="http://localhost:4000//" class="logo"><strong>Evan Pratten</strong> <span>retrylife</span></a>
-        <nav>
-            <!-- <a href="#menu">Menu</a> -->
-        </nav>
-    </header>
-
-    <!-- Menu -->
-    <!-- <nav id="menu">
-	<ul class="links">
-        
-		    
-		
-		    
-		
-		    
-		
-		    
-		        <li><a href="http://localhost:4000//">Home</a></li>
-	    	
-		
-		    
-		
-		    
-		
-		
-		    
-		
-		    
-		
-		    
-		        <li><a href="http://localhost:4000/all_posts.html">All posts</a></li>
-		    
-		
-		    
-		
-		    
-		
-		    
-		
-	</ul>
-	<ul class="actions vertical">
-		<li><a href="#" class="button special fit">Get Started</a></li>
-		<li><a href="#" class="button fit">Log In</a></li>
-	</ul>
-</nav> -->
-
-    <!-- Banner -->
-    <section id="banner" class="major" style="height:90vh">
-        <div class="inner">
-            <header class="major">
-                <h1>Hi, I am Evan Pratten</h1>
-            </header>
-            <div class="content">
-                <p >Computer wizard, student, <a href="https://github.com/frc5024">@frc5024</a> programming team lead, and radio enthusiast.</p>
-                <!-- <ul class="actions">
-                    <li><a href="#one" class="button next scrolly">Get Started</a></li>
-                </ul> -->
+    <body>
+            <section class="hero is-primary is-medium is-fullheight-with-navbar" >
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+      <!-- <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item is-active">
+                Home
+              </a>
+              <a class="navbar-item" href="/posts">
+                Posts
+              </a>              
             </div>
+          </div>
         </div>
-    </section>
-
-    <!-- Main -->
-    <div id="main">
-
-        <!-- <section id="two">
-            <div class="inner">
-                <header class="major">
-                    <h2>Projects</h2>
-                </header>
-            </div>
-        </section>
-
-        <section id="one" class="tiles">
-       
-    <article>
-        <span class="image">
-            <img src="assets/images/DeepSpace.jpg" alt="" />
-          </span>
-        <header class="major">
-            <h3><a href="/DeepSpace.html" class="link">Generic</a></h3>
-            <p>The code behind 5024's 2019 robot</p>
-        </header>
-    </article>
-             
-</section>
-
-        <section id="two">
-            <div class="inner">
-                <header class="major">
-                    <h2>Posts</h2>
-                </header>
-            </div>
-        </section> -->
-
-        <!-- <section id="two">
-  <div class="inner">
-      <header class="major">
-          <h2>Projects</h2>
-      </header>
-  </div>
-</section>
-<section id="one" class="tiles">
-  
-   
-  <article>
-    <span class="image">
-      <img src="" alt="" />
-    </span>
-    <header class="major">
-      <h3><a href="/projects/2019/06/27/PWNlink.html" class="link">I had some fun with a router</a></h3>
-      <p>cleartext passwords + external management = death wish</p>
-    </header>
-  </article>
-  
-  
-   
-  
-   
-  <article>
-    <span class="image">
-      <img src="" alt="" />
-    </span>
-    <header class="major">
-      <h3><a href="/projects/2019/06/26/BashSmash.html" class="link">BashSmash</a></h3>
-      <p>A tool for driving people crazy</p>
-    </header>
-  </article>
-  
-  
-   
-  
-   
-  
-   
-  
-   
-  
-   
-  
-   
-  
-   
-  <article>
-    <span class="image">
-      <img src="" alt="" />
-    </span>
-    <header class="major">
-      <h3><a href="/projects/2019/06/12/Styiling-GitHub.html" class="link">GitHub's CSS is boring. So I refreshed the design</a></h3>
-      <p></p>
-    </header>
-  </article>
-  
-  
-</section>
-
-<section id="two">
-  <div class="inner">
-      <header class="major">
-          <h2>Robotics</h2>
-      </header>
-  </div>
-</section>
-<section id="one" class="tiles">
-  
-   
-  
-   
-  
-   
-  
-   
-  
-   
-  
-   
-  
-   
-  
-   
-  
-   
-  
-   
-  
-</section>
-
-<section id="two">
-  <div class="inner">
-      <header class="major">
-          <h2>Other</h2>
-      </header>
-  </div>
-</section> -->
-<section id="one" class="tiles">
-  
-  
-  <article>
-    <span class="image">
-      <img src="" alt="" />
-    </span>
-    <header class="major">
-      <h3><a href="/projects/2019/06/27/PWNlink.html" class="link">I had some fun with a router</a></h3>
-      <p>cleartext passwords + external management = death wish</p>
-    </header>
-  </article>
-  
-  
-  
-  <article>
-    <span class="image">
-      <img src="" alt="" />
-    </span>
-    <header class="major">
-      <h3><a href="/random/2019/06/27/Python.html" class="link">Hunting snakes with a shotgun</a></h3>
-      <p>Python is a little too forgiving</p>
-    </header>
-  </article>
-  
-  
-  
-  <article>
-    <span class="image">
-      <img src="" alt="" />
-    </span>
-    <header class="major">
-      <h3><a href="/projects/2019/06/26/BashSmash.html" class="link">BashSmash</a></h3>
-      <p>A tool for driving people crazy</p>
-    </header>
-  </article>
-  
-  
-  
-  <article>
-    <span class="image">
-      <img src="" alt="" />
-    </span>
-    <header class="major">
-      <h3><a href="/frc/2019/06/24/LanguageHunt2.html" class="link">The language hunt: Part 2</a></h3>
-      <p>A quick followup</p>
-    </header>
-  </article>
-  
-  
-  
-  <article>
-    <span class="image">
-      <img src="" alt="" />
-    </span>
-    <header class="major">
-      <h3><a href="/ctf/2019/06/23/googlectf.html" class="link">I gave Google's CTF a short try and learned a thing or two</a></h3>
-      <p>But exams got in the way and took all the fun</p>
-    </header>
-  </article>
-  
-  
-  
-  <article>
-    <span class="image">
-      <img src="" alt="" />
-    </span>
-    <header class="major">
-      <h3><a href="/frc/2019/06/21/Robot-Experiences.html" class="link">What I have learned from 2 years of FRC programming</a></h3>
-      <p>Robots are pretty cool</p>
-    </header>
-  </article>
-  
-  
-  
-  <article>
-    <span class="image">
-      <img src="" alt="" />
-    </span>
-    <header class="major">
-      <h3><a href="/random/2019/06/18/Blogs-I-Read.html" class="link">Blogs I Read</a></h3>
-      <p>The constantly updating list</p>
-    </header>
-  </article>
-  
-  
-  
-  <article>
-    <span class="image">
-      <img src="" alt="" />
-    </span>
-    <header class="major">
-      <h3><a href="/music/2019/06/17/AMM2M1-release.html" class="link">I made a new song!</a></h3>
-      <p>Releasing a new song with friends at school</p>
-    </header>
-  </article>
-  
-  
-  
-  <article>
-    <span class="image">
-      <img src="" alt="" />
-    </span>
-    <header class="major">
-      <h3><a href="/frc/2019/06/16/Graphing-w2a.html" class="link">Graphing the relation between wheels and awards for FRC</a></h3>
-      <p>AKA. Why programmer + reddit + matplotlib is a bad idea.</p>
-    </header>
-  </article>
-  
-  
-  
-  <article>
-    <span class="image">
-      <img src="" alt="" />
-    </span>
-    <header class="major">
-      <h3><a href="/projects/2019/06/12/Styiling-GitHub.html" class="link">GitHub's CSS is boring. So I refreshed the design</a></h3>
-      <p></p>
-    </header>
-  </article>
-  
-  
-</section>
-
-
-<!-- <article>
-<section id="one" class="posts">
-  
-  
-  <article>
-    <header class="">
-      <h3 class="list-post-title"><a href="/projects/2019/06/27/PWNlink.html" class="link">I had some fun with a router</a></h3>
-      <p>cleartext passwords + external management = death wish</p>
-    </header>
-  </article>
-  <hr>
-  
-  
-  
-  <article>
-    <header class="">
-      <h3 class="list-post-title"><a href="/random/2019/06/27/Python.html" class="link">Hunting snakes with a shotgun</a></h3>
-      <p>Python is a little too forgiving</p>
-    </header>
-  </article>
-  <hr>
-  
-  
-  
-  <article>
-    <header class="">
-      <h3 class="list-post-title"><a href="/projects/2019/06/26/BashSmash.html" class="link">BashSmash</a></h3>
-      <p>A tool for driving people crazy</p>
-    </header>
-  </article>
-  <hr>
-  
-  
-  
-  <article>
-    <header class="">
-      <h3 class="list-post-title"><a href="/frc/2019/06/24/LanguageHunt2.html" class="link">The language hunt: Part 2</a></h3>
-      <p>A quick followup</p>
-    </header>
-  </article>
-  <hr>
-  
-  
-  
-  <article>
-    <header class="">
-      <h3 class="list-post-title"><a href="/ctf/2019/06/23/googlectf.html" class="link">I gave Google's CTF a short try and learned a thing or two</a></h3>
-      <p>But exams got in the way and took all the fun</p>
-    </header>
-  </article>
-  <hr>
-  
-  
-  
-  <article>
-    <header class="">
-      <h3 class="list-post-title"><a href="/frc/2019/06/21/Robot-Experiences.html" class="link">What I have learned from 2 years of FRC programming</a></h3>
-      <p>Robots are pretty cool</p>
-    </header>
-  </article>
-  <hr>
-  
-  
-  
-  <article>
-    <header class="">
-      <h3 class="list-post-title"><a href="/random/2019/06/18/Blogs-I-Read.html" class="link">Blogs I Read</a></h3>
-      <p>The constantly updating list</p>
-    </header>
-  </article>
-  <hr>
-  
-  
-  
-  <article>
-    <header class="">
-      <h3 class="list-post-title"><a href="/music/2019/06/17/AMM2M1-release.html" class="link">I made a new song!</a></h3>
-      <p>Releasing a new song with friends at school</p>
-    </header>
-  </article>
-  <hr>
-  
-  
-  
-  <article>
-    <header class="">
-      <h3 class="list-post-title"><a href="/frc/2019/06/16/Graphing-w2a.html" class="link">Graphing the relation between wheels and awards for FRC</a></h3>
-      <p>AKA. Why programmer + reddit + matplotlib is a bad idea.</p>
-    </header>
-  </article>
-  <hr>
-  
-  
-  
-  <article>
-    <header class="">
-      <h3 class="list-post-title"><a href="/projects/2019/06/12/Styiling-GitHub.html" class="link">GitHub's CSS is boring. So I refreshed the design</a></h3>
-      <p></p>
-    </header>
-  </article>
-  <hr>
-  
-  
-</section>
-</article> -->
-
-
-<article>
-  <section id="two">
-    <div class="inner">
-        <!-- <header class="major">
-            <h2>Massa libero</h2>
-        </header>
-        <p>
-</p> -->
-        <ul class="actions">
-            <li><a href="all_posts.html" class="button next">View All</a></li>
-        </ul>
+      </nav> -->
     </div>
-</section>
-</article>
+  
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">
+          Evan Pratten
+        </h1>
+        <h2 class="subtitle">
+          Computer wizard, student, <a href="https://frc5024.github.io">@frc5024</a> programming team lead, and radio enthusiast.
+        </h2>
+      </div>
+    </div>
+  
+    <!-- Hero footer: will stick at the bottom -->
+    <div class="hero-foot">
+        <nav class="tabs">
+            <div class="container">
+                <ul>
+                    <li>
 
-
-        <!-- Two -->
-        <!-- <section id="two">
-            <div class="inner">
-                <ul class="actions">
-                    <li><a href="all_posts.html" class="button next">View All</a></li>
+                    </li>
                 </ul>
             </div>
-        </section> -->
-
+        </nav>
     </div>
-
-    <!-- Footer -->
-<footer id="footer">
-    <div class="inner">
-        <ul class="icons">
-            
-            <li><a href="https://twitter.com/ewpratten" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+  </section>
+            <!-- <section class="section">
+    
+        <div class="tile">
+                  <p class="title">
+                    I had some fun with a router
+                  </p>
+                  <p class="subtitle">
+                    cleartext passwords + external management = death wish
+                  </p>
                   
-            <li><a href="https://gitlab.com/u/ewpratten" class="icon alt fa-gitlab" target="_blank"><span class="label">GitLab</span></a></li>
-             
-            <li><a href="https://github.com/ewpratten" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-              
+                  <p class="card-footer-item">
+                    <span>
+                      <a href="/projects/2019/06/27/PWNlink.html">Read Post</a>
+                    </span>
+                  </p>
+              </div>
+    
+        <div class="tile">
+                  <p class="title">
+                    Hunting snakes with a shotgun
+                  </p>
+                  <p class="subtitle">
+                    Python is a little too forgiving
+                  </p>
+                  
+                  <p class="card-footer-item">
+                    <span>
+                      <a href="/random/2019/06/27/Python.html">Read Post</a>
+                    </span>
+                  </p>
+              </div>
+    
+        <div class="tile">
+                  <p class="title">
+                    BashSmash
+                  </p>
+                  <p class="subtitle">
+                    A tool for driving people crazy
+                  </p>
+                  
+                  <p class="card-footer-item">
+                    <span>
+                      <a href="/projects/2019/06/26/BashSmash.html">Read Post</a>
+                    </span>
+                  </p>
+              </div>
+    
+        <div class="tile">
+                  <p class="title">
+                    The language hunt: Part 2
+                  </p>
+                  <p class="subtitle">
+                    A quick followup
+                  </p>
+                  
+                  <p class="card-footer-item">
+                    <span>
+                      <a href="/frc/2019/06/24/LanguageHunt2.html">Read Post</a>
+                    </span>
+                  </p>
+              </div>
+    
+        <div class="tile">
+                  <p class="title">
+                    I gave Google's CTF a short try and learned a thing or two
+                  </p>
+                  <p class="subtitle">
+                    But exams got in the way and took all the fun
+                  </p>
+                  
+                  <p class="card-footer-item">
+                    <span>
+                      <a href="/ctf/2019/06/23/googlectf.html">Read Post</a>
+                    </span>
+                  </p>
+              </div>
+    
+        <div class="tile">
+                  <p class="title">
+                    What I have learned from 2 years of FRC programming
+                  </p>
+                  <p class="subtitle">
+                    Robots are pretty cool
+                  </p>
+                  
+                  <p class="card-footer-item">
+                    <span>
+                      <a href="/frc/2019/06/21/Robot-Experiences.html">Read Post</a>
+                    </span>
+                  </p>
+              </div>
+    
+        <div class="tile">
+                  <p class="title">
+                    Blogs I Read
+                  </p>
+                  <p class="subtitle">
+                    The constantly updating list
+                  </p>
+                  
+                  <p class="card-footer-item">
+                    <span>
+                      <a href="/random/2019/06/18/Blogs-I-Read.html">Read Post</a>
+                    </span>
+                  </p>
+              </div>
+    
+        <div class="tile">
+                  <p class="title">
+                    I made a new song!
+                  </p>
+                  <p class="subtitle">
+                    Releasing a new song with friends at school
+                  </p>
+                  
+                  <p class="card-footer-item">
+                    <span>
+                      <a href="/music/2019/06/17/AMM2M1-release.html">Read Post</a>
+                    </span>
+                  </p>
+              </div>
+    
+        <div class="tile">
+                  <p class="title">
+                    Graphing the relation between wheels and awards for FRC
+                  </p>
+                  <p class="subtitle">
+                    AKA. Why programmer + reddit + matplotlib is a bad idea.
+                  </p>
+                  
+                  <p class="card-footer-item">
+                    <span>
+                      <a href="/frc/2019/06/16/Graphing-w2a.html">Read Post</a>
+                    </span>
+                  </p>
+              </div>
+    
+        <div class="tile">
+                  <p class="title">
+                    GitHub's CSS is boring. So I refreshed the design
+                  </p>
+                  <p class="subtitle">
+                    
+                  </p>
+                  
+                  <p class="card-footer-item">
+                    <span>
+                      <a href="/projects/2019/06/12/Styiling-GitHub.html">Read Post</a>
+                    </span>
+                  </p>
+              </div>
+    
+        <div class="tile">
+                  <p class="title">
+                    Building a safe and easy system for sending computer vision data from a raspberry pi to a roborio
+                  </p>
+                  <p class="subtitle">
+                    
+                  </p>
+                  
+                  <p class="card-footer-item">
+                    <span>
+                      <a href="/frc/2019/05/27/Building-Safe-Vision-Comms.html">Read Post</a>
+                    </span>
+                  </p>
+              </div>
+    
+        <div class="tile">
+                  <p class="title">
+                    The language hunt
+                  </p>
+                  <p class="subtitle">
+                    
+                  </p>
+                  
+                  <p class="card-footer-item">
+                    <span>
+                      <a href="/frc/2019/04/30/FRC-Languages.html">Read Post</a>
+                    </span>
+                  </p>
+              </div>
+    
+        <div class="tile">
+                  <p class="title">
+                    Using a python script to create devRant posts based on the style and content of another user
+                  </p>
+                  <p class="subtitle">
+                    if/else ++
+                  </p>
+                  
+                  <p class="card-footer-item">
+                    <span>
+                      <a href="/projects/2018/06/27/BecomeRanter.html">Read Post</a>
+                    </span>
+                  </p>
+              </div>
+     -->
 
-            <li><a href="/feed.xml" class="icon alt fa-rss" target="_blank"><span class="label">RSS</span></a></li>
-        </ul>
-        <ul class="copyright">
-            <li>&copy; Evan Pratten retrylife</li>
-            <li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
 
-        </ul>
-    </div>
-</footer>
+    <div class="tile is-ancestor">
+            
+
+            
+            <div class="tile is-parent">
+                <article class="tile is-child box">
+                    <p class="title">I had some fun with a router</p>
+                    <p class="subtitle">cleartext passwords + external management = death wish</p>
+                </article>
+            </div>
+            
+            <div class="tile is-parent">
+                <article class="tile is-child box">
+                    <p class="title">Hunting snakes with a shotgun</p>
+                    <p class="subtitle">Python is a little too forgiving</p>
+                </article>
+            </div>
+            
+            <div class="tile is-parent">
+                <article class="tile is-child box">
+                    <p class="title">BashSmash</p>
+                    <p class="subtitle">A tool for driving people crazy</p>
+                </article>
+            </div>
+            
+            <div class="tile is-parent">
+                <article class="tile is-child box">
+                    <p class="title">The language hunt: Part 2</p>
+                    <p class="subtitle">A quick followup</p>
+                </article>
+            </div>
+            
+            <div class="tile is-parent">
+                <article class="tile is-child box">
+                    <p class="title">I gave Google's CTF a short try and learned a thing or two</p>
+                    <p class="subtitle">But exams got in the way and took all the fun</p>
+                </article>
+            </div>
+            
+            <div class="tile is-parent">
+                <article class="tile is-child box">
+                    <p class="title">What I have learned from 2 years of FRC programming</p>
+                    <p class="subtitle">Robots are pretty cool</p>
+                </article>
+            </div>
+            
+            <div class="tile is-parent">
+                <article class="tile is-child box">
+                    <p class="title">Blogs I Read</p>
+                    <p class="subtitle">The constantly updating list</p>
+                </article>
+            </div>
+            
+            <div class="tile is-parent">
+                <article class="tile is-child box">
+                    <p class="title">I made a new song!</p>
+                    <p class="subtitle">Releasing a new song with friends at school</p>
+                </article>
+            </div>
+            
+            <div class="tile is-parent">
+                <article class="tile is-child box">
+                    <p class="title">Graphing the relation between wheels and awards for FRC</p>
+                    <p class="subtitle">AKA. Why programmer + reddit + matplotlib is a bad idea.</p>
+                </article>
+            </div>
+            
+            <div class="tile is-parent">
+                <article class="tile is-child box">
+                    <p class="title">GitHub's CSS is boring. So I refreshed the design</p>
+                    <p class="subtitle"></p>
+                </article>
+            </div>
+            
+            <div class="tile is-parent">
+                <article class="tile is-child box">
+                    <p class="title">Building a safe and easy system for sending computer vision data from a raspberry pi to a roborio</p>
+                    <p class="subtitle"></p>
+                </article>
+            </div>
+            
+            <div class="tile is-parent">
+                <article class="tile is-child box">
+                    <p class="title">The language hunt</p>
+                    <p class="subtitle"></p>
+                </article>
+            </div>
+            
+            <div class="tile is-parent">
+                <article class="tile is-child box">
+                    <p class="title">Using a python script to create devRant posts based on the style and content of another user</p>
+                    <p class="subtitle">if/else ++</p>
+                </article>
+            </div>
+            
 
 </div>
-
-<!-- Scripts -->
-<script src="http://localhost:4000/assets/js/jquery.min.js"></script>
-<script src="http://localhost:4000/assets/js/jquery.scrolly.min.js"></script>
-<script src="http://localhost:4000/assets/js/jquery.scrollex.min.js"></script>
-<script src="http://localhost:4000/assets/js/skel.min.js"></script>
-<script src="http://localhost:4000/assets/js/util.js"></script>
-<!--[if lte IE 8]><script src="http://localhost:4000/assets/js/ie/respond.min.js"></script><![endif]-->
-<script src="http://localhost:4000/assets/js/main.js"></script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74118570-2"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-74118570-2');
-</script>
-
-</body>
-
+</section>
+    </body>
 </html>

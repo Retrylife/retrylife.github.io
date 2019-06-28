@@ -1,90 +1,78 @@
 <!DOCTYPE html>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-
-<head>
+<html lang="en"><head>
     <title>Evan Pratten</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="/assets/css/main.css" />
-    <!-- <link rel="stylesheet" href="/assets/css/custom.css" /> -->
-    <!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
-    <!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <!-- Syntax highlight -->
-    <link rel="stylesheet" href="/assets/css/vs.css" />
-</head>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
 
-<body>
+    <link rel="stylesheet" href="/assets/css/custom.css">
+</head><body><section class="hero is-primary is-medium is-fullheight-with-navbar" >
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+      <!-- <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item is-active">
+                Home
+              </a>
+              <a class="navbar-item" href="/posts">
+                Posts
+              </a>              
+            </div>
+          </div>
+        </div>
+      </nav> -->
+    </div>
+  
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">
+          Evan Pratten
+        </h1>
+        <h2 class="subtitle">
+          Computer wizard, student, <a href="https://frc5024.github.io">@frc5024</a> programming team lead, and radio enthusiast.
+        </h2>
+      </div>
+    </div>
+  
+    <!-- Hero footer: will stick at the bottom -->
+    <div class="hero-foot">
+        <nav class="tabs">
+            <div class="container">
+                <ul>
+                    <li>
 
-    <!-- Wrapper -->
-<div id="wrapper">
-
-    <!-- Header -->
-    <header id="header" >
-        <a href="http://localhost:4000//" class="logo"><strong>Evan Pratten</strong> <span>retrylife</span></a>
-        <nav>
-            <!-- <a href="#menu">Menu</a> -->
+                    </li>
+                </ul>
+            </div>
         </nav>
-    </header>
+    </div>
+  </section><main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-    <!-- Menu -->
-    <!-- <nav id="menu">
-	<ul class="links">
-        
-		    
-		
-		    
-		
-		    
-		
-		    
-		        <li><a href="http://localhost:4000//">Home</a></li>
-	    	
-		
-		    
-		
-		    
-		
-		
-		    
-		
-		    
-		
-		    
-		        <li><a href="http://localhost:4000/all_posts.html">All posts</a></li>
-		    
-		
-		    
-		
-		    
-		
-		    
-		
-	</ul>
-	<ul class="actions vertical">
-		<li><a href="#" class="button special fit">Get Started</a></li>
-		<li><a href="#" class="button fit">Log In</a></li>
-	</ul>
-</nav> --> 
-    
-    
-<!-- Main -->
-<div id="main" class="alt">
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">I had some fun with a router</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-06-27T13:16:00-04:00" itemprop="datePublished">Jun 27, 2019
+      </time></p>
+  </header>
 
-<!-- One -->
-<section id="one">
-	<div class="inner">
-		<header class="major">
-			<h1>I had some fun with a router</h1>
-		</header>
-		
-		<p><p>I was playing around with some D-link routers today and remembered an <a href="https://www.exploit-db.com/exploits/33520">ExploitDB Entry</a> I read a while ago. Many D-link routers have a great feature that allows remote management and configuration queries. Interestingly, this cannot be disabled, and one of the pages contains a cleartext version of the admin password (yay!).</p>
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>I was playing around with some D-link routers today and remembered an <a href="https://www.exploit-db.com/exploits/33520">ExploitDB Entry</a> I read a while ago. Many D-link routers have a great feature that allows remote management and configuration queries. Interestingly, this cannot be disabled, and one of the pages contains a cleartext version of the admin password (yay!).</p>
 
 <h2 id="how-to-get-yourself-an-admin-password">How to get yourself an admin password</h2>
 <p>On any supported router, make an HTTP request to <code class="highlighter-rouge">http://your.router.ip.addr/tools_admin.asp/</code>. This will return a pretty large XML file containing information about your router’s hardware and configuration.</p>
@@ -124,58 +112,35 @@
 <p><strong>Don’t be dumb with this script.</strong></p>
 
 <p>I have only used it on my own (or 5024’s) routers, and did not create PWNlink with any malicious intent.</p>
-</p>
-	</div>
-</section>
 
+  </div><a class="u-url" href="/projects/2019/06/27/PWNlink.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading"></h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name"></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/ewpratten"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">ewpratten</span></a></li><li><a href="https://www.twitter.com/ewpratten"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">ewpratten</span></a></li></ul>
 </div>
 
-    <!-- Footer -->
-<footer id="footer">
-    <div class="inner">
-        <ul class="icons">
-            
-            <li><a href="https://twitter.com/ewpratten" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
-                  
-            <li><a href="https://gitlab.com/u/ewpratten" class="icon alt fa-gitlab" target="_blank"><span class="label">GitLab</span></a></li>
-             
-            <li><a href="https://github.com/ewpratten" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-              
-
-            <li><a href="/feed.xml" class="icon alt fa-rss" target="_blank"><span class="label">RSS</span></a></li>
-        </ul>
-        <ul class="copyright">
-            <li>&copy; Evan Pratten retrylife</li>
-            <li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
-
-        </ul>
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
     </div>
+
+  </div>
+
 </footer>
-
-</div>
-
-<!-- Scripts -->
-<script src="http://localhost:4000/assets/js/jquery.min.js"></script>
-<script src="http://localhost:4000/assets/js/jquery.scrolly.min.js"></script>
-<script src="http://localhost:4000/assets/js/jquery.scrollex.min.js"></script>
-<script src="http://localhost:4000/assets/js/skel.min.js"></script>
-<script src="http://localhost:4000/assets/js/util.js"></script>
-<!--[if lte IE 8]><script src="http://localhost:4000/assets/js/ie/respond.min.js"></script><![endif]-->
-<script src="http://localhost:4000/assets/js/main.js"></script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-74118570-2"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-74118570-2');
-</script>
-
 </body>
 
 </html>

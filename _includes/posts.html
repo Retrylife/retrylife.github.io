@@ -1,0 +1,33 @@
+<!-- <section class="section">
+    {% for post in site.posts %}
+        <div class="tile">
+                  <p class="title">
+                    {{post.title}}
+                  </p>
+                  <p class="subtitle">
+                    {{post.description}}
+                  </p>
+                  
+                  <p class="card-footer-item">
+                    <span>
+                      <a href="{{ post.url  | relative_url }}">Read Post</a>
+                    </span>
+                  </p>
+              </div>
+    {% endfor %} -->
+
+
+    <div class="tile is-ancestor">
+            
+
+            {% for post in site.posts %}
+            <div class="tile is-parent">
+                <article class="tile is-child box">
+                    <p class="title">{{post.title}}</p>
+                    <p class="subtitle">{{post.description}}</p>
+                </article>
+            </div>
+            {% endfor %}
+
+</div>
+</section>
