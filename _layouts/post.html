@@ -1,38 +1,40 @@
+<!DOCTYPE html>
+<html>
+
 {% include head.html %}
 
 <body>
 
-    <div class="site-ctr">
-        <!-- Navbar -->
-        {% include nav.html %}
+	{% include header.html %} 
+	
+	<section id="banner" class="major" style="height:40vh">
+			<div class="inner">
+				<header class="major">
+					<h1>{{ page.title }}</h1>
+				</header>
+				<div class="content">
+						<p >{{ page.description }}</p>
+						
+					</div>
+			</div>
+		</section>
+    
+    
+<!-- Main -->
+<div id="main" class="alt">
 
-        <!-- Header -->
-        <div class="header">
-            <div class="container">
-                <div class="content">
-                    <!-- <h1>{{page.title}}</h1>
-                    <h3>{{page.description}}</h3>
-                    <br>
-                    <p>{{page.date}}</p> -->
-                </div>
-            </div>
-            <div class="header-gap"></div>
-        </div>
+<!-- One -->
+<section id="one">
+	<div class="inner">
+		{% if page.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ page.image }}" alt="" /></span>{% endif %}
+		<p>{{ content }}</p>
+	</div>
+</section>
 
-        <div class="reactive-bg">
-            <div class="post container">
-                <h1>{{page.title}}</h1>
-                <h4>{{page.description}}</h4>
-                <hr>
-                <p><em>{{page.date}}</em></p>
+</div>
 
-                <br>
-                
-                {{content}}
-            </div>
-        </div>
-
-    </div>
     {% include footer.html %}
 
 </body>
+
+</html>
