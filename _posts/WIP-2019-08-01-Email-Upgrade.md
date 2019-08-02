@@ -12,5 +12,5 @@ Over the past year, I have been having issues with my retrylife.ca email address
 
 ## Setting up with Gmail
 
-## Improvements 
+## Improvements
 To finish this up, Im looking to add catch-all, and suffix support to my email addresses. This would allow me to do something like: send all email from snapchat to `spam+snapchat@__domain__.ca`.
