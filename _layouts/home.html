@@ -2,7 +2,7 @@
 
 <body>
 
-    <div class="site-ctr">
+    <div id="site-body" class="site-ctr jhidden">
         <!-- Navbar -->
         {% include nav.html %}
 
@@ -112,6 +112,21 @@
 
 
     </div>
+
+    
     {% include footer.html %}
+
+    <script src="/assets/js/page.js"></script> 
+    <script>
+        // This script ensures assets have loaded before showing page //
+
+        // Once the page has loaded, show everything again
+        addListenerForPageReady(()=>{
+            document.getElementById("site-body").classList.remove("jhidden");
+            document.getElementById("site-body").classList.add("appear");
+        });
+
+
+    </script>
 
 </body>

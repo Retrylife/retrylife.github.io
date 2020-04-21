@@ -1,0 +1,43 @@
+@keyframes spinner-border {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.preloader {
+  position: absolute;
+  height: 99.9vh;
+  width: 99.9vw;
+  top:0%;
+  left:0%;
+  overflow: hidden;
+  background-color: #343a40;
+  color: #fff;
+}
+
+.disappear {
+  animation-name: fadeout;
+  animation-duration: 0.5s;
+}
+
+.appear {
+  animation-name: fadein;
+  animation-duration: 0.5s;
+}
+
+.preloader .spinner-border {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  position: absolute;
+  left: calc(50% - 40px);
+  top: calc(50% - 40px);
+  display: inline-block;
+  vertical-align: text-bottom;
+  border: 8px solid #fff;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spinner-border 0.75s linear infinite;
+}
+
+
