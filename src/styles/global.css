@@ -1,0 +1,9 @@
+:root{
+    --theme-bg:#d3dbe4;
+    --theme-text-primary:#1c3340;
+    --theme-text-secondary:#223d4f;
+}
+
+body{
+    background-color: var(--theme-bg);
+}
