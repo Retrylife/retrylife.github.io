@@ -19,7 +19,8 @@
 
         </div>
         <div class="landing-more container">
-            <h5><a href="/blog">Blog</a> <a href="/projects">Projects</a> <a href="/events">Events</a> <a href="#whoami">More</a></h5>
+            <h5><a href="/blog">Blog</a> <a href="/projects">Projects</a> <a href="/events">Events</a> <a
+                    href="#whoami">More</a></h5>
         </div>
 
 
@@ -39,94 +40,70 @@
                         <h3 id="me-landing" style="text-align:center">Programmer</h3>
                     </div>
 
-                    <!-- <hr> -->
-                    <div>
-                        <!-- class="tagline"> -->
-                        <br><br><br><br><br>
-                        <!-- <div style="height:20vh;"></div> -->
-
-                        <div id="whoami">
-                            <h2 class="blocky">WHOAMI</h2>
-                            <p>{{site.about}}</p>
-                        </div>
-
-                        <br><br><br><br><br>
-                        <!-- <div style="height:20vh;"></div> -->
-
-                        <div id="languages">
-                            <h2 class="blocky">Programming</h2>
-
-                            <p>I have been programming since 2013, and started learning with Python3.
-                                Since then, I have picked up many other languages, and am currently mainly using Python,
-                                Java, and C.
-                                I am also working on learning a few new languages, including Ruby at the moment.</p>
-                        </div>
 
 
-                        <br><br><br><br><br>
-                        <!-- <div style="height:20vh;"></div> -->
-
-                        <div id="whoami">
-                            <h2 class="blocky">Projects</h2>
-                            <p>In my <a href="/projects">Projects page</a>, I have a list of projects I have worked on,
-                                ranging from unfinished
-                                ideas, to codebases that took months to develop. Feel free to check them out, and let me
-                                know what you think!</p>
-                        </div>
-
-                        <!-- <h2>Languages</h2>
-
-                        <div class="progress" style="height:30px">
-                            <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="15"
-                                aria-valuemin="0" aria-valuemax="100">Python</div>
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 30%"
-                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">Java</div>
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 10%" aria-valuenow="20"
-                                aria-valuemin="0" aria-valuemax="100">C</div>
-                            <div class="progress-bar bg-secondary" role="progressbar" style="width: 20%"
-                                aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">Other</div>
-                        </div>
-
-                        <br>
-                        <p>I have been programming since 2013, and started learning with Python3.<br>
-                            Since then, I have picked up many other languages, and am currently mainly using Python,
-                            Java, and C.<br>
-                            I am working on learning a few new languages, including Ruby at the moment.</p> -->
-
-
-                        <!-- <br><br>
-                        <h2>Projects</h2>
-
-                        <p>
-                            To learn more about the projects I work on, check out my Projects page
-                        </p>
-
-                        <a href="{{site.baseurl}}/projects">
-                            <button type="button" class="btn btn-success">View Page</button>
-                        </a> -->
-                    </div>
 
                 </div>
             </div>
+
+            <div class="sharp-top proj-graph">
+                <div class="container">
+
+                    <h2>My goal is to create something new every day</h2>
+
+                    <canvas id="goalChart"></canvas>
+                </div>
+            </div>
+
         </div>
 
 
     </div>
 
-    
+
     {% include footer.html %}
 
-    <script src="/assets/js/page.js"></script> 
+    <script src="/assets/js/page.js"></script>
     <script>
         // This script ensures assets have loaded before showing page //
 
         // Once the page has loaded, show everything again
-        addListenerForPageReady(()=>{
+        addListenerForPageReady(() => {
             document.getElementById("site-body").classList.remove("jhidden");
             document.getElementById("site-body").classList.add("appear");
         });
 
+        // Add a callback for image load
+        addLoadRequirement((callback) => {
+            document.getElementById("face-backdrop").decode().then(() => {
+                callback();
+            })
+        })
 
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script>
+        var ctx = document.getElementById('goalChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'line',
+
+            // The data for our dataset
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                datasets: [{
+                    label: 'My First dataset',
+                    backgroundColor: 'rgb(255, 99, 132)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    data: [0, 10, 5, 2, 20, 30, 45]
+                }]
+            },
+
+            // Configuration options go here
+            options: {}
+        });
     </script>
 
 </body>

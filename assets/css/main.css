@@ -10,6 +10,21 @@ html {
     scroll-behavior: smooth;
 }
 
+.sharp-top {
+    -webkit-clip-path: polygon(0 120px, 100% 0, 100% 63.33%, 0px 100%);
+    clip-path: polygon(0 120px, 100% 0, 100% calc(100% - 120px), 0px 100%);
+    
+    background-color:#fff;
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.proj-graph{
+    min-height:300px;
+    text-align:center;
+    font-weight:bold;
+}
+
 .landing.container {
     display: block;
     height: 80vh;
@@ -280,10 +295,10 @@ a h5 {
     background-color: #fff;
 }
 
-.title.container{
-    text-align:center;
-    padding-top:15px;
-    padding-bottom:15px;
+.title.container {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 20px;
     font-family: 'IBM Plex Sans', sans-serif;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -292,8 +307,8 @@ a h5 {
     background-color: #fff;
 }
 
-.post-date{
-    color:rgba(182, 182, 182, 0.602);
+.post-date {
+    color: rgba(182, 182, 182, 0.602);
 }
 
 #advert {
