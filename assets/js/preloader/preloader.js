@@ -80,7 +80,7 @@ class Preloader {
         } else {
             setTimeout(() => {
                 this.element.classList.add("hidden");
-            }, 1000);
+            }, 500);
         }
 
         console.log("[Preloader] Hiding preloader");

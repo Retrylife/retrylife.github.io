@@ -10,27 +10,42 @@ let _readyStateListeners = [];
 // Wait a tiny amount of time to allow the arrays to be filled up
 setTimeout(() => {
 
-    // Check every load requirement
-    _loadRequirements.forEach((req) => {
-        // Run the req & handle loading
-        req(() => {
+    console.log("preforming asset loading");
 
-            // Incr the number of successfully loaded reqs
-            _reqsCompleted += 1;
+    if (_loadRequirements.length == 0) {
+        // Hide the loader
+        page_preloader.hide(false);
 
-            // If this is the last req, hide the loader
-            if (_reqsCompleted == _loadRequirements.length) {
+        // Notify all listeners
+        _readyStateListeners.forEach((callback) => {
+            callback();
+        });
 
-                // Hide the loader
-                page_preloader.hide(false);
+    } else {
 
-                // Notify all listeners
-                _readyStateListeners.forEach((callback) => {
-                    callback();
-                })
-            }
-        })
-    });
+        // Check every load requirement
+        _loadRequirements.forEach((req) => {
+            // Run the req & handle loading
+            req(() => {
+
+                // Incr the number of successfully loaded reqs
+                _reqsCompleted += 1;
+
+                // If this is the last req, hide the loader
+                if (_reqsCompleted == _loadRequirements.length) {
+
+                    // Hide the loader
+                    page_preloader.hide(false);
+
+                    // Notify all listeners
+                    _readyStateListeners.forEach((callback) => {
+                        callback();
+                    })
+                }
+            })
+
+        });
+    }
 
 }, 100);
 

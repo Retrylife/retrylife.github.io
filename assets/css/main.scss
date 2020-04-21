@@ -2,6 +2,13 @@
 ---
 
 // Style components
-@import 'ui/theme.scss';
-@import 'ui/animations/fade.scss';
+@import 'theme.scss';
+@import 'ui/animation/fade.scss';
 @import 'ui/preloader/preloader.scss';
+
+
+body{
+    margin:0;
+    padding:0;
+    background-color:$page_bg;
+}
