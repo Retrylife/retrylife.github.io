@@ -1,0 +1,53 @@
+.homepage {
+  // Main title
+  .title_section {
+    height: 100vh;
+
+    .name_card {
+      text-align: center;
+      background-color: #ffffff;
+      border-radius: 5px;
+      max-width: 650px;
+      margin: auto;
+
+      .profile {
+        border-radius: 100%;
+        width: 65%;
+      }
+    }
+
+    .title {
+      font-family: "Open Sans", sans-serif;
+      font-size: 4rem;
+      font-weight: bold;
+      color: $title_clr;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sub_title {
+      font-family: "Open Sans", sans-serif;
+      font-size: 2rem;
+      font-weight: normal;
+      color: $subtitle_clr;
+    }
+
+    .alt_name {
+      font-family: "Open Sans", sans-serif;
+      font-size: 2.5rem;
+      font-weight: normal;
+      margin: 0;
+      padding: 0;
+      color: $subtitle_clr;
+    }
+
+    .alt_name_secondary {
+      font-family: "Open Sans", sans-serif;
+      font-size: 2rem;
+      font-weight: normal;
+      margin: 0;
+      padding: 0;
+      color: $subtitle_clr;
+    }
+  }
+}

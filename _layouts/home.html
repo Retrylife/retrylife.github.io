@@ -2,10 +2,28 @@
     {% include head.html %}
     {% include css.html %}
 </head>
-<body>
+<body class="homepage">
+
+    <div id="section-title" class="title_section">
+        <div style="height:20vh;"></div>
+        <div class="name_card">
+            <div style="height:3%;"></div>
+
+            <!-- Profile pic -->
+            <img src="" id="profile-pic" class="profile" data-url="{{page.profile_pic_url  | relative_url}}" alt="Profile Photo">
+
+            <!-- Name & Info -->
+            <h1 class="title">{{page.title}}</h1>
+            <p class="sub_title">{{page.subtitle}}</p>
+
+            <div style="height:3%;"></div>
+        </div>
+    </div>
     
      {% include foot.html %}
      {% include scripts.html %}
 
      <!-- Homepage JS -->
+     <script src="{{ '/assets/js/homepage_control/title_section.js' | relative_url }}"></script>
+
 </body>

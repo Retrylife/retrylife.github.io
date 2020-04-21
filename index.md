@@ -2,6 +2,7 @@
 layout: home
 
 # Section 1
+profile_pic_url: '/assets/images/human-profile.jpg'
 title: Evan Pratten
 subtitle: idk...
 

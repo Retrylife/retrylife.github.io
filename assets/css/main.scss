@@ -1,10 +1,17 @@
 ---
 ---
 
-// Style components
+// Config
 @import 'theme.scss';
+@import 'fonts.scss';
+
+// UI
 @import 'ui/animation/fade.scss';
 @import 'ui/preloader/preloader.scss';
+
+// Pages
+@import 'page/home.scss';
+
 
 
 body{

@@ -4,7 +4,7 @@ page_preloader.show(true);
 
 /* Functions for page loading */
 let _loadRequirements = [];
-let _requsCompleted = 0;
+let _reqsCompleted = 0;
 let _readyStateListeners = [];
 
 // Wait a tiny amount of time to allow the arrays to be filled up
