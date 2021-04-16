@@ -1,8 +1,9 @@
-<nav class="navbar navbar-dark sticky-top bg-dark navbar-expand-lg custom-navbar" id="navbar">
+<nav class="navbar navbar-dark sticky-top bg-dark navbar-expand-lg custom-navbar" id="navbar" style="overflow: visible">
     <!-- Navbar content -->
     <div class="container">
-        <a class="navbar-brand" href="{{site.baseurl}}/"><img src="{{site.baseurl}}/assets/images/Signature.png" alt="Evan Pratten"></a>
-            <!-- <span>{{site.title}}</span></a> -->
+        <a class="navbar-brand" href="{{site.baseurl}}/"><img src="{{site.baseurl}}/assets/images/Signature.png"
+                alt="Evan Pratten"></a>
+        <!-- <span>{{site.title}}</span></a> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -11,10 +12,113 @@
             <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link" href="{{site.baseurl}}/blog">Blog</a>
                 <a class="nav-item nav-link" href="{{site.baseurl}}/events">Events</a>
-                <!-- <a class="nav-item nav-link" href="{{site.baseurl}}/linklist">LinkList</a> -->
-                <!-- <a class="nav-item nav-link" href="{{site.baseurl}}/downloads">Downloads</a> -->
                 <a class="nav-item nav-link" href="{{site.baseurl}}/about">About</a>
+
+                <!-- Search -->
+                <div class="dropdown">
+                    <a class="nav-item nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">Search</a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton"
+                        style="overflow: visible; width:max-content;" onclick="event.stopPropagation()">
+
+                        <!-- Search bar -->
+                        <div class="form-inline" style="margin-bottom:.5rem">
+                            <div class="form-group" style="margin:auto;">
+                                <input class="form-control mr-1 ml-2" type="search" placeholder="Search"
+                                    aria-label="Search" id="search-content">
+                                <button class="btn btn-outline-secondary ml-1 mr-2"><i class="fas fa-search"
+                                        onclick="doTopNavSearch();"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Results -->
+                        <ul class="list-group list-group-flush" id="search-results"
+                            style="overflow-y: scroll;max-height:50vh;max-width:90vw;">
+                        </ul>
+                    </div>
+                </div>
+
             </div>
+
         </div>
     </div>
 </nav>
+
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script src="{{site.baseurl}}/assets/js/site_data/projects.gen.js"></script>
+<script src="{{site.baseurl}}/assets/js/site_data/posts.gen.js"></script>
+<script>
+
+    // Set up search list
+    var search_data = [];
+    site_raw_projects.forEach((project) => {
+        search_data.push({
+            name: project.title,
+            text: project.description,
+            url: ""
+        });
+    });
+    site_raw_posts.forEach((post) => {
+        search_data.push({
+            name: post.title,
+            text: post.excerpt + post.tags,
+            url: post.url
+        });
+    });
+
+    // Create search object
+    var site_search = lunr(function () {
+        this.ref('name')
+        this.field('text')
+
+        search_data.forEach(function (doc) {
+            this.add(doc)
+        }, this)
+    })
+
+    function doTopNavSearch() {
+        // Get the content
+        var navElem = document.getElementById("search-results");
+        var term = document.getElementById("search-content").value;
+
+        // Do Search
+        var result = site_search.search(term);
+
+        // Handle every entry in the result
+        navElem.innerHTML = "";
+        if (result.length > 0) {
+            result.forEach((entry) => {
+                if (entry.score > 0) {
+                    // Get the actual data
+                    var key = entry.ref;
+
+                    // Find the correct element
+                    for (idx in search_data) {
+                        var item = search_data[idx];
+                        if (item.name == key) {
+
+                            // Build the element
+                            navElem.innerHTML += `
+                        <a href="${item.url}" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1"><i class="fas fa-book"></i>${item.name}</h5>
+                            </div>
+                            <p class="card-text"></p>
+                        </a>
+                        `;
+
+                            break;
+                        }
+                    }
+                }
+            });
+        } else {
+            navElem.innerHTML += `
+                        <a href="${item.url}" class="list-group-item list-group-item-action">
+                            <p class="card-text">No Result</p>
+                        </a>
+                        `;
+        }
+    }
+
+</script>
